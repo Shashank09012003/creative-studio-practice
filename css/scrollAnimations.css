@@ -1,0 +1,82 @@
+/* Split text animations */
+.split-text {
+    overflow: hidden;
+    position: relative;
+}
+
+.split-text-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.split-char {
+    display: inline-block;
+    position: relative;
+    transform-origin: center bottom;
+    will-change: transform, opacity;
+}
+
+/* Masked reveal animations */
+.reveal-element {
+    opacity: 0;
+    position: relative;
+}
+
+.reveal-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.reveal-clone {
+    position: relative;
+    opacity: 1;
+}
+
+/* Parallax layers */
+.parallax-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    will-change: transform;
+}
+
+/* Hero section with parallax */
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* 3D tilt effect */
+.tilt-element {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: box-shadow 0.3s ease;
+}
+
+.tilt-element:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.tilt-inner {
+    will-change: transform;
+}
+
+/* Background transitions */
+body {
+    transition: background-color 0.8s ease, color 0.8s ease, background-image 1.5s ease;
+}
+
+/* CSS Variables for theme colors */
+:root {
+    --bg-color: #0f0f0f;
+    --text-color: #ffffff;
+    --accent-color: #ff3c00;
+    --footer-gradient-color: #1a0a2e;
+}

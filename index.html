@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Studio</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Libraries CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.css"
+    />
+  </head>
+  <body data-scroll-container>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="loader-counter">0</div>
+      <div class="loader-progress">
+        <div class="loader-progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="logo">Studio</a>
+
+          <div class="desktop-nav">
+            <a href="#" class="magnetic">Home</a>
+            <a href="#" class="magnetic">Work</a>
+            <a href="#" class="magnetic">About</a>
+            <a href="#" class="magnetic">Services</a>
+            <a href="#" class="magnetic">Contact</a>
+          </div>
+
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" data-bg-color="#0f0f0f">
+      <div class="parallax-layer" data-depth="0.1">
+        <div class="hero-bg"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="split-text">Creative Digital Studio</h1>
+          <p class="split-text">
+            We craft immersive digital experiences that captivate and inspire.
+          </p>
+          <a href="#" class="btn magnetic">Explore Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" data-bg-color="#151515" data-text-color="#ffffff">
+      <div class="container">
+        <h2 class="split-text">Selected Work</h2>
+
+        <div class="work-grid">
+          <!-- Project 1 -->
+          <div class="work-item reveal-element">
+            <div class="tilt-wrapper">
+              <img
+                src="Assets/ui-ux-representations-with-laptop_23-2150201871.jpg"
+                alt="Project 1"
+                class="tilt-image"
+              />
+              <div class="work-item-overlay">
+                <h3>Project Title</h3>
+                <p>Branding, Web Design</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="work-item reveal-element">
+            <div class="video-wrapper autoplay">
+              <video
+                src="Assets/From KlickPin CF Cybersecurity Landing Page in 2025 _ Web design Portfolio web design Webpage design.mp4"
+                muted
+                loop
+              ></video>
+            </div>
+            <h3 class="animate-in" data-animation="slide">Motion Design</h3>
+            <p class="animate-in" data-animation="slide">
+              Animation, 3D Rendering
+            </p>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="work-item reveal-element">
+            <div class="enhanced-image gooey-image">
+              <img src="Assets/PORSCHE 911.jpeg" alt="Project 3" />
+            </div>
+            <h3 class="animate-in" data-animation="fade">Digital Campaign</h3>
+            <p class="animate-in" data-animation="fade">
+              Marketing, Social Media
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" data-bg-color="#1a1a1a" data-text-color="#ffffff">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2 class="split-text">We Create Digital Experiences</h2>
+            <p class="animate-in" data-animation="fade">
+              Our studio specializes in creating immersive digital experiences
+              that blend creativity with technology. We work with brands to
+              develop unique digital identities that stand out in today's
+              crowded marketplace.
+            </p>
+            <a href="#" class="btn magnetic">Learn More</a>
+          </div>
+
+          <div class="about-image reveal-element">
+            <div class="flag-animation" data-flag-image="img/flag.png"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" data-bg-color="#0d0d0d" data-text-color="#ffffff">
+      <div class="container">
+        <h2 class="split-text">Our Services</h2>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-item animate-in" data-animation="scale">
+            <div class="service-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+            </div>
+            <h3>Web Design</h3>
+            <p>
+              Crafting responsive, intuitive interfaces that engage users and
+              drive conversions.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="service-item animate-in"
+            data-animation="scale"
+            data-delay="0.2"
+          >
+            <div class="service-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+            </div>
+            <h3>Motion Design</h3>
+            <p>
+              Bringing brands to life through animation, video production, and
+              interactive storytelling.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="service-item animate-in"
+            data-animation="scale"
+            data-delay="0.4"
+          >
+            <div class="service-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+                ></path>
+              </svg>
+            </div>
+            <h3>Brand Identity</h3>
+            <p>
+              Developing distinctive visual languages that communicate your
+              brand's unique story.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="service-item animate-in"
+            data-animation="scale"
+            data-delay="0.6"
+          >
+            <div class="service-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Digital Strategy</h3>
+            <p>
+              Creating comprehensive digital strategies that align with your
+              business objectives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase" data-bg-color="#121212" data-text-color="#ffffff">
+      <div class="container">
+        <h2 class="split-text">Featured Work</h2>
+
+        <div class="showcase-item reveal-element">
+          <div class="enhanced-image gooey-image">
+            <img src="Assets/feelings.png" alt="Showcase 1" />
+          </div>
+          <div class="showcase-content">
+            <h3 class="animate-in" data-animation="fade">Project Horizon</h3>
+            <p class="animate-in" data-animation="fade">
+              A comprehensive brand identity and digital experience for an
+              innovative tech startup.
+            </p>
+            <a href="#" class="btn magnetic">View Case Study</a>
+          </div>
+        </div>
+
+        <div class="showcase-video reveal-element">
+          <div class="video-wrapper autoplay">
+            <video src="video/showcase.mp4" muted loop></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      class="testimonials"
+      data-bg-color="#0a0a0a"
+      data-text-color="#ffffff"
+    >
+      <div class="container">
+        <h2 class="split-text">Client Feedback</h2>
+
+        <div class="testimonials-slider">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-item animate-in" data-animation="fade">
+            <div class="testimonial-content">
+              <p>
+                "Working with this studio transformed our digital presence.
+                Their attention to detail and creative approach exceeded our
+                expectations."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img
+                src="Assets/review.webp"
+                alt="Client 1"
+                class="tilt-element"
+              />
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <p>Marketing Director, TechCorp</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-item animate-in" data-animation="fade">
+            <div class="testimonial-content">
+              <p>
+                "The team's ability to translate our vision into a compelling
+                digital experience was remarkable. They're true partners in our
+                success."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img
+                src="Assets/review2.jpg"
+                alt="Client 2"
+                class="tilt-element"
+              />
+              <div class="author-info">
+                <h4>Michael Chen</h4>
+                <p>CEO, Innovate Inc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" data-bg-color="#151515" data-text-color="#ffffff">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2 class="split-text">Get in Touch</h2>
+            <p class="animate-in" data-animation="fade">
+              Ready to start your next project? Let's create something amazing
+              together.
+            </p>
+
+            <div class="contact-details animate-in" data-animation="fade">
+              <div class="contact-item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>hello@creativestudio.com</span>
+              </div>
+
+              <div class="contact-item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <span>+1 (123) 456-7890</span>
+              </div>
+
+              <div class="contact-item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>123 Creative St, Design City</span>
+              </div>
+            </div>
+
+            <div class="social-links animate-in" data-animation="fade">
+              <a href="#" class="magnetic">Instagram</a>
+              <a href="#" class="magnetic">Twitter</a>
+              <a href="#" class="magnetic">LinkedIn</a>
+              <a href="#" class="magnetic">Behance</a>
+            </div>
+          </div>
+
+          <div class="contact-form reveal-element">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn magnetic">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-logo footer-animate">
+            <a href="#">Studio</a>
+            <p>Crafting digital experiences that inspire.</p>
+          </div>
+
+          <div class="footer-nav footer-animate">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#" class="magnetic">Home</a></li>
+              <li><a href="#" class="magnetic">Work</a></li>
+              <li><a href="#" class="magnetic">About</a></li>
+              <li><a href="#" class="magnetic">Services</a></li>
+              <li><a href="#" class="magnetic">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact footer-animate">
+            <h4>Contact</h4>
+            <p>hello@creativestudio.com</p>
+            <p>+1 (123) 456-7890</p>
+          </div>
+
+          <div class="footer-social footer-animate">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="magnetic">Instagram</a>
+              <a href="#" class="magnetic">Twitter</a>
+              <a href="#" class="magnetic">LinkedIn</a>
+              <a href="#" class="magnetic">Behance</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom footer-animate">
+          <p>&copy; 2023 Creative Studio. All rights reserved.</p>
+          <div
+            class="footer-text"
+            data-text="Let's create something amazing together"
+          >
+            Let's create something amazing together
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/shery.js@1.0.0/dist/Shery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
